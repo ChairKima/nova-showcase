@@ -1,0 +1,331 @@
+/* assets/css/nova-demo-styles.css */
+
+/* --- Base & Typography --- */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7; 
+    color: #4a5568; 
+    background-color: #f8f9fc; 
+    margin: 0; 
+    padding: 0; 
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.page-wrapper { display: flex; flex-direction: column; min-height: 100vh; }
+.site-content { flex-grow: 1; }
+
+.container { 
+    max-width: 920px; 
+    margin-left: auto; 
+    margin-right: auto;
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+
+/* --- Hero / Main Title Section --- */
+.hero-section {
+    text-align: center;
+    padding: 70px 20px 80px 20px; 
+    background-color: #007bff; 
+    color: #ffffff; 
+}
+
+.hero-section h1.page-main-title,
+.hero-section h1.page-main-title .nova-icon { 
+    color: #ffffff; 
+}
+
+.hero-section h2.page-subtitle { 
+    color: #e9ecef; 
+}
+
+.hero-section + .container { 
+    margin-top: 50px; 
+}
+
+h1, h2, h3, h4 {
+    color: #1a2b48; 
+    line-height: 1.3;
+    margin-bottom: 0.75em;
+}
+
+h1.page-main-title { 
+    font-size: 3em; 
+    font-weight: 800; 
+    margin-top: 0; 
+    margin-bottom: 15px;
+    letter-spacing: -1px; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 12px; 
+}
+h1.page-main-title .nova-icon { font-size: 0.9em; }
+
+h2.page-subtitle { 
+    font-size: 1.4em;
+    font-weight: 400;
+    margin-bottom: 0; 
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* --- Interactive Demo Section --- */
+.nova-demo-section {
+    background-color: #ffffff; 
+    padding: 30px 35px; 
+    border-radius: 10px;
+    margin-top: 40px; 
+    margin-bottom: 50px;
+    border: 1px solid #e0e0e0; 
+    box-shadow: 0 6px 16px rgba(28, 41, 64, 0.06);
+}
+
+.nova-demo-section h3 {
+    font-size: 1.7em; 
+    font-weight: 600;
+    color: #1a2b48;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: left; 
+}
+.nova-demo-section > p { 
+    margin-bottom: 25px; font-size: 1rem; color: #4a5568;
+}
+
+#nl-prompt-interactive {
+    width: 100%; box-sizing: border-box; min-height: 120px; 
+    padding: 14px 18px; margin-bottom: 18px; border: 1px solid #d0d7de; 
+    border-radius: 8px; font-size: 1rem; line-height: 1.6;
+    resize: vertical; transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+#nl-prompt-interactive:focus {
+    border-color: #007bff; outline: none; box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.demo-buttons-container { 
+    margin-bottom: 25px; display: flex; gap: 12px; 
+}
+
+#send-button-interactive,
+#new-pipeline-button-interactive {
+    padding: 10px 20px; font-size: 1rem; font-weight: 600; 
+    border-radius: 6px; cursor: pointer; 
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    border: 1px solid transparent; 
+    box-shadow: 0 1px 2px rgba(27,31,35,.075);
+}
+#send-button-interactive:active,
+#new-pipeline-button-interactive:active { transform: translateY(1px); }
+
+#send-button-interactive { background-color: #007bff; color: white; border-color: #007bff;}
+#send-button-interactive:hover { background-color: #0069d9; border-color: #0062cc;}
+#send-button-interactive:disabled { background-color: #add2ff; border-color: #add2ff; color: #f0f0f0; cursor: not-allowed; }
+
+#new-pipeline-button-interactive { background-color: #6c757d; color: white; border-color: #6c757d;}
+#new-pipeline-button-interactive:hover { background-color: #5a6268; border-color: #545b62;}
+
+#dsl-output-interactive {
+    background-color: #282c34; color: #abb2bf; padding: 20px;
+    border-radius: 6px; min-height: 200px; max-height: 400px; 
+    overflow-y: auto; white-space: pre-wrap; word-wrap: break-word; 
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    font-size: 0.875em; line-height: 1.65; border: 1px solid #21252b; 
+    margin-top: 8px; 
+}
+
+#status-message-interactive { 
+    margin-top: 18px; padding: 12px 15px; border-radius: 6px; font-size: 0.9rem; text-align: left;
+}
+#status-message-interactive.error { background-color: #f8d7da; color: #721c24; border: 1px solid rgba(215,58,73,.4);}
+#status-message-interactive.success { background-color: #d1e7dd; color: #0f5132; border: 1px solid rgba(15,81,50,.4);}
+
+label[for="nl-prompt-interactive"],
+label[for="dsl-output-interactive"] {
+    display: block; margin-bottom: 8px; font-weight: 600; 
+    color: #1a2b48; font-size: 1rem;
+}
+
+/* --- Content Sections Styling --- */
+.content-section {
+    padding-top: 40px; 
+    padding-bottom: 40px;
+    margin-top: 0; 
+    margin-bottom: 0;
+    border-bottom: 1px solid #e9ecef; 
+}
+.content-section:last-of-type { border-bottom: none; }
+
+.container > .nova-demo-section + .content-section { 
+    margin-top: 0; 
+    padding-top: 40px; 
+}
+.container > .content-section:first-child { 
+    margin-top: 0;
+    padding-top: 10px; 
+}
+
+.content-section h2 { 
+    font-size: 2em; 
+    font-weight: 700;
+    color: #1a2b48;
+    margin-top: 0; 
+    margin-bottom: 30px; 
+    padding-bottom: 15px; 
+    border-bottom: 2px solid #007bff; 
+    display: inline-block; 
+}
+
+.content-section p, 
+.content-section ul {
+    font-size: 1rem; 
+    color: #4a5568; 
+    line-height: 1.8; 
+    margin-bottom: 1.5em;
+}
+
+.content-section ul { list-style: none; padding-left: 0; }
+.content-section li {
+    margin-bottom: 12px; 
+    padding-left: 35px; 
+    position: relative;
+}
+.capability-icon {
+    position: absolute; left: 0; top: 1px; 
+    font-size: 1.3em; 
+    color: #007bff; 
+}
+
+.content-section strong { font-weight: 600; color: #2d3748; }
+
+/* --- Video Demo Section Styles --- */
+.demo-video-container {
+    margin: 25px auto 30px auto; 
+    padding: 10px; 
+    background-color: #f0f3f5; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    text-align: center; 
+    max-width: 740px; 
+}
+
+.demo-video-container video {
+    max-width: 100%; 
+    height: auto;   
+    border-radius: 6px; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-description { 
+    font-size: 1rem; 
+    color: #4a5568;
+    line-height: 1.7;
+    text-align: left; /* CHANGED from center */
+    margin-bottom: 20px; 
+    /* Removed padding: 0 10px; - let container handle padding */
+    /* max-width: 720px; */ /* Optional: if you want to constrain this paragraph specifically */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+}
+
+.full-demo-link-container {
+    text-align: center;
+    margin-top: 30px; 
+    margin-bottom: 20px; 
+}
+
+.full-demo-link {
+    display: inline-block;
+    padding: 12px 24px; 
+    background-color: #6c757d; 
+    color: #ffffff !important; 
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    font-size: 1rem;
+}
+
+.full-demo-link:hover {
+    background-color: #545b62;
+    transform: translateY(-1px);
+}
+
+/* --- Call to Action Section --- */
+.cta-section-wrapper { 
+    background-color: #007bff; 
+    color: #ffffff; 
+    padding: 70px 0; 
+    margin-top: 50px; 
+}
+.cta-section { 
+    text-align: center; 
+}
+.cta-section h2 {
+    color: #ffffff;
+    font-size: 2.2em;
+    border-bottom: none; 
+}
+.cta-section > p { 
+    color: #e9ecef; 
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1em; 
+}
+.cta-button {
+    display: inline-block; padding: 15px 35px; 
+    background-color: #ffffff; 
+    color: #007bff !important; 
+    text-decoration: none; border-radius: 8px; font-size: 1.15em; 
+    font-weight: 600; transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.cta-button:hover {
+    background-color: #f0f6ff; 
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.contact-details {
+    margin-top: 35px; 
+    font-size: 1rem;
+    line-height: 1.7;
+}
+.contact-details p { 
+    color: #e0e0e0; 
+    font-size: 1rem; 
+    margin-bottom: 10px; 
+}
+.contact-details a {
+    color: #ffffff; 
+    text-decoration: underline;
+    font-weight: 500; 
+}
+.contact-details a:hover {
+    text-decoration: none; 
+    opacity: 0.9;
+}
+
+/* --- Footer --- */
+.site-footer {
+    text-align: center; padding: 40px 20px; 
+    font-size: 0.9em; color: #6c757d;
+    background-color: #f8f9fc; 
+    border-top: 1px solid #e9ecef;
+}
+.site-footer p { margin: 0; }
+.site-footer a { color: #007bff; text-decoration: none; }
+.site-footer a:hover { text-decoration: underline; }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
