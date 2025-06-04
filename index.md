@@ -41,12 +41,12 @@ layout: default
 
     <div class="content-section">
         <h2>Nova: The AI-Native Data Engineering Ecosystem</h2>
-        <p><strong>Nova</strong> is our answer. It's an **AI-first data engineering ecosystem** where the AI itself is the primary data engineer. You communicate your needs in natural language, and Nova takes over.</p>
+        <p><strong>Nova</strong> is our answer. It's an <strong>AI-first data engineering ecosystem</strong> where the AI itself is the primary data engineer. You communicate your needs in natural language, and Nova takes over.</p>
         <p>Our revolutionary concept is simple yet powerful:</p>
         <ul>
-            <li><span class="capability-icon">💬</span> **Conversational & Code-Free:** No human coding is required. Just plain English instructions.</li>
-            <li><span class="capability-icon">🧠</span> **AI as the Engine:** Nova's AI understands data engineering natively, translating your intent into its own optimized language (Nova DSL) and then into executable pipelines.</li>
-            <li><span class="capability-icon">🌐</span> **Unified System:** Our vision is for Nova to become the single, intelligent system that handles all aspects of data engineering, replacing the current fragmented and complex toolchains.</li>
+            <li><span class="capability-icon">💬</span> <strong>Conversational & Code-Free:</strong> No human coding is required. Just plain English instructions.</li>
+            <li><span class="capability-icon">🧠</span> <strong>AI as the Engine:</strong> Nova's AI understands data engineering natively, translating your intent into its own optimized language (Nova DSL) and then into executable pipelines.</li>
+            <li><span class="capability-icon">🌐</span> <strong>Unified System:</strong> Our vision is for Nova to become the single, intelligent system that handles all aspects of data engineering, replacing the current fragmented and complex toolchains.</li>
         </ul>
     </div>
 
@@ -90,10 +90,10 @@ layout: default
         <h2>The Complete Nova Vision: Beyond Pipelines</h2>
         <p>While today's MVP focuses on core pipeline creation and execution, the full Nova vision (as outlined in our plan) encompasses an entire self-managing data ecosystem:</p>
         <ul>
-            <li><span class="capability-icon">🤖</span> **The Nova Brain:** An advanced AI core with deep data engineering expertise, capable of complex reasoning, architectural pattern recognition, and multi-objective optimization (performance, cost, reliability).</li>
-            <li><span class="capability-icon">🛠️</span> **Self-Managing Infrastructure:** Nova will autonomously handle deployment, scaling (e.g., on Kubernetes), monitoring, and even self-healing of your data infrastructure in the cloud.</li>
-            <li><span class="capability-icon">📈</span> **Continuous Learning & Optimization:** Nova is designed to learn from every interaction, system performance, and aggregated industry patterns to continuously improve its suggestions and the efficiency of your pipelines.</li>
-            <li><span class="capability-icon">🧩</span> **Extensible Ecosystem:** A rich registry of connectors, pre-built templates, and ML models, allowing Nova to adapt to virtually any data source or advanced analytical need.</li>
+            <li><span class="capability-icon">🤖</span> <strong>The Nova Brain:</strong> An advanced AI core with deep data engineering expertise, capable of complex reasoning, architectural pattern recognition, and multi-objective optimization (performance, cost, reliability).</li>
+            <li><span class="capability-icon">🛠️</span> <strong>Self-Managing Infrastructure:</strong> Nova will autonomously handle deployment, scaling (e.g., on Kubernetes), monitoring, and even self-healing of your data infrastructure in the cloud.</li>
+            <li><span class="capability-icon">📈</span> <strong>Continuous Learning & Optimization:</strong> Nova is designed to learn from every interaction, system performance, and aggregated industry patterns to continuously improve its suggestions and the efficiency of your pipelines.</li>
+            <li><span class="capability-icon">🧩</span> <strong>Extensible Ecosystem:</strong> A rich registry of connectors, pre-built templates, and ML models, allowing Nova to adapt to virtually any data source or advanced analytical need.</li>
         </ul>
         <p>We are building the ultimate AI data engineering partner that understands your business needs and materializes them into resilient, efficient, production-ready data platforms – abstracting away the underlying complexity entirely.</p>
     </div>
@@ -102,7 +102,7 @@ layout: default
     <div class="container cta-section"> 
         <h2>Invest in the Future of Data Engineering</h2>
         <p style="font-size: 1.1em; margin-bottom: 25px;">
-            Nova has demonstrated its core, transformative technology. We are currently seeking **$5,000 in pre-seed funding** to achieve our next critical milestones: further enhancing Nova's core AI reasoning, expanding our library of essential data connectors, and initiating pilot programs with early-adopter businesses.
+            Nova has demonstrated its core, transformative technology. We are currently seeking <strong>$5,000 in pre-seed funding</strong> to achieve our next critical milestones: further enhancing Nova's core AI reasoning, expanding our library of essential data connectors, and initiating pilot programs with early-adopter businesses.
         </p>
         <p style="margin-bottom: 30px;">
             <a href="mailto:info.nova.aiagent@gmail.com?subject=Nova%20Investment%20Inquiry%20&%20Demo%20Request" class="cta-button">Discuss Investment & Schedule a Demo</a>
