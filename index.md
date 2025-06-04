@@ -1,5 +1,6 @@
 ---
 layout: default
+# title attribute for browser tab is handled by _layouts/default.html using page.title or site.title
 ---
 
 <div class="hero-section">
