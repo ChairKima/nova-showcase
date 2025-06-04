@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const statusMessageDiv = document.getElementById('status-message-interactive');
 
     let currentDslDraft = null; 
-    const backendUrl = 'http://127.0.0.1:5001/generate-dsl';
+    // **** THIS IS THE IMPORTANT UPDATE ****
+    const backendUrl = 'https://ChairKima1.pythonanywhere.com/generate-dsl'; // Use your live backend URL
 
     function displayStatus(message, isError = false) {
         if (statusMessageDiv) {
@@ -38,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const payload = {
                 nl_instruction: nlInstruction
             };
-            if (currentDslDraft && nlInstruction.trim().toLowerCase() !== '!new') { // Don't send draft for !new
+            if (currentDslDraft && nlInstruction.trim().toLowerCase() !== '!new') { 
                 payload.current_dsl_draft = currentDslDraft;
             }
 
@@ -65,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             console.error('Error sending prompt to Nova:', error);
             dslOutputArea.textContent = `// Network error or backend issue: ${error.message}`;
-            displayStatus(`Network error or backend issue: ${error.message}. Is the Flask backend running on port 5001?`, true);
+            displayStatus(`Network error or backend issue: ${error.message}. Is the Flask backend deployed and reachable?`, true);
         } finally {
             sendButton.disabled = false;
             sendButton.textContent = 'Send to Nova';
@@ -87,11 +88,8 @@ document.addEventListener('DOMContentLoaded', () => {
         newPipelineButton.addEventListener('click', () => {
             if(nlPromptInput) nlPromptInput.value = ''; 
             currentDslDraft = null; 
-            // Send "!new" to backend so agent can reset its draft too
             sendPromptToNova("!new"); 
-            // Also update frontend immediately
             if(dslOutputArea) dslOutputArea.textContent = "// New pipeline session started. Describe your pipeline.";
-            // displayStatus("New pipeline session started.", false); // sendPromptToNova will handle this
         });
     }
 

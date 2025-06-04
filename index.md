@@ -1,10 +1,10 @@
 ---
 layout: default
-# title attribute for browser tab is handled by _layouts/default.html using page.title or site.title
 ---
 
 <div class="hero-section">
-    <div class="container"> <h1 class="page-main-title">
+    <div class="container"> 
+        <h1 class="page-main-title">
             <span class="nova-icon">🚀</span> Nova Your AI Data Engineer
         </h1>
         <h2 class="page-subtitle">
@@ -13,7 +13,9 @@ layout: default
     </div>
 </div>
 
-<div class="container"> <div class="nova-demo-section">
+<div class="container"> 
+
+    <div class="nova-demo-section">
         <h3>Try Nova Live! (NL-to-DSL Demo)</h3>
         <p>Describe your data pipeline in plain English. Type "!new" to start a fresh pipeline, or iteratively add to the current one.</p>
 
@@ -58,7 +60,9 @@ layout: default
 
     <div class="content-section">
         <h2>Proof in Action: Nova Live!</h2>
-        <p class="video-description">Watch how Nova transforms plain English into a functional S3-to-BigQuery data pipeline in under 3 minutes! This demo showcases reading CSV data from S3, performing daily aggregations, and loading results directly into Google BigQuery.</p>
+        <p class="video-description">
+            Watch how Nova transforms plain English into a functional S3-to-BigQuery data pipeline in under 3 minutes! This demo showcases reading CSV data from S3, performing daily aggregations, and loading results directly into Google BigQuery.
+        </p>
         <div class="demo-video-container">
           <video width="720" height="405" controls poster="{{ '/assets/images/video_poster_placeholder.jpg' | relative_url }}"> 
             <source src="{{ '/assets/videos/nova_demo_short.mp4' | relative_url }}" type="video/mp4">
@@ -84,11 +88,11 @@ layout: default
             Nova has proven its core technology and is poised to transform the data engineering landscape. We are currently seeking seed funding and strategic partners to accelerate development, expand our capabilities, and bring Nova to market.
         </p>
         <p style="margin-bottom: 30px;">
-            <a href="mailto:Kimathibonface.bk@gmail.com?subject=Nova%20Inquiry%20and%20Demo%20Request" class="cta-button">Schedule a Demo or Learn More</a>
+            <a href="mailto:info.nova.aiagent@gmail.com?subject=Nova%20Inquiry%20and%20Demo%20Request" class="cta-button">Schedule a Demo or Learn More</a>
         </p>
         <div class="contact-details">
              <p>Or reach out directly:</p>
-             <p>Email: <a href="mailto:Kimathibonface.bk@gmail.com">Kimathibonface.bk@gmail.com</a></p>
+             <p>Email: <a href="mailto:info.nova.aiagent@gmail.com">info.nova.aiagent@gmail.com</a></p>
              <p>Phone: <a href="tel:+254791899276">+254 791 899276</a></p>
         </div>
     </div>
